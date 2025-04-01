@@ -340,6 +340,7 @@ footer ul {
     color: white;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .product-links {
@@ -359,8 +360,8 @@ footer ul {
     position: absolute;
     color: black;
     background-color: var(--nav-button-color);
-    top: 70px;
-    left: 950px;
+    top: 30px;
+    left: -10px;
     right: 0;
     height: 140px;
     width: 185px;
