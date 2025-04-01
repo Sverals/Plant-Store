@@ -547,6 +547,7 @@ legend {
 #purchase-btn {
     width: 20%;
     margin-top: -1em;
+    padding:0;
 }
 
 .product-main {
@@ -692,6 +693,14 @@ caption {
     overflow-x: auto;
 }
 
+#purchase-form {
+    background-color: white;
+    color: black;
+}
+
+#purchase-form label {
+    color: black;
+}
 
 
 
