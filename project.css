@@ -7,6 +7,9 @@
     --secondary-color: white;
     --nav-button-color: #1B2F33;
     --nav-hover: #223a3f;
+    --table-row-highlight: #ffffff;
+    --table-row-highlight-secondary: #cecbcb;
+
 }
 
 * {
@@ -194,7 +197,7 @@ main {
 .right-arrow {
     position: relative;
     top: 150px;
-    left: 1290px;
+    left: 1285px;
     width: 10px;
 }
 
@@ -213,7 +216,6 @@ main {
 
 .product-shell {
     width: 100%;
-    position: relative;
 }
 
 button {
@@ -338,7 +340,6 @@ footer ul {
     color: white;
     display: flex;
     align-items: center;
-    position: relative;
 }
 
 .product-links {
@@ -358,8 +359,8 @@ footer ul {
     position: absolute;
     color: black;
     background-color: var(--nav-button-color);
-    top: 27px;
-    left: -10px;
+    top: 70px;
+    left: 950px;
     right: 0;
     height: 140px;
     width: 185px;
@@ -445,7 +446,7 @@ footer ul {
     padding: 1em;
 }
 
-/*Contact page*/
+/*Contact page and form*/
 .increase-font {
     font-size: 1.25rem;
 }
@@ -454,36 +455,74 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    background-color: var(--nav-button-color);
+
+}
+
+form.black-box {
+    padding: 1em 2em 1em 2em
+}
+#form-section {
+    margin: 0 .5em 0 .5em;
+}
+form h3 {
+    color: white;
+}
+
+fieldset {
+    padding: 1em
 }
 
 label, input {
-    width: 20%;
+    width: 30%;
     height: 2em;
+    color: white;
+}
+
+input {
+    border-radius: 5px;
+    padding: 1em;
+    color: black
 }
 
 .form-item {
     display: flex;
     flex-direction: column;
 }
-
+label {
+    line-height: 2em;
+    margin-top: .5em;
+}
 #usermessage {
     width: 50%;
 }
 
-#submit-button {
-    width: 10%;
-    margin: 0 0 1em 5em;
+legend {
+    color: white;
 }
 
-.contact-form {
-    margin: 1em
+#submit-button {
+    width: 10%;
+    color: black;
+    background-color: #e8eff1;
+    border: 2px solid black;
+    text-align: center;
+    padding: 0;
+    margin-top: 1em;
+    font-size: 1.1rem;
 }
+
+#submit-button:hover {
+    background-color: #a9b1b4
+}
+
+/*Product page css*/
 
 .no-link-color {
     color: black;
 }
 
-/*Product page css*/
+
 .individual-product-container {
     display: flex;
     padding: 3em 0 0 15em;
@@ -609,8 +648,6 @@ meter {
     height: 100%;
     width: 100%;
 }
-
-/*Table selectors*/
 table {
     border-collapse: collapse;
     text-align: center;
@@ -625,7 +662,7 @@ th, td {
     padding: 10px;
 }
 td {
-    white-space: nowrap; /*td forced to one line text*/
+    white-space: nowrap;
     padding: 1em 
 }
 th {
@@ -645,18 +682,24 @@ caption {
     text-align: center;
     font-size: 1.7em;
     margin-bottom: .75em;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 #service-table {
     border-bottom: 2px solid black;
     padding: 1em 2em 2em 2em;
-    overflow-x: auto; /*Adds scroll when width too small*/
+    overflow-x: auto;
 }
+
+
+
 
 /*Responsive section*/
 /*Converts most flex into column flex boxes*/
 @media only screen and (max-width: 1250px) {
+    caption {
+        text-align: left;
+    }
 
     .company-logo {
         margin-bottom: 1em;
@@ -844,6 +887,15 @@ caption {
         min-width: 100px;
     }
     .fun-fact {
+        width: 100%;
+    }
+
+    /*Form*/
+    input, label, #usermessage {
+        width: 100%;
+    }
+
+    #submit-button {
         width: 100%;
     }
 }

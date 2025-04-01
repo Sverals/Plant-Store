@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../project.css">
-    <title>Garden Store</title>
+    <title>Shirley Good Growing Co. - Contact our store</title>
 </head>
 <body>
 <header class="outline" id="logo-header">
@@ -64,38 +64,30 @@
             </div>
         </div>
     </section>
-    <section class="black-box">
-        <h2 class="center contact-form">Contact Form</h2>
-        <form action="" class="black-box">
-            <h3>Enter your information so we can contact you</h3>
-            <div class="form-item">
-                <label for="firstname">First name:</label>
-                <input type="text" name="firstname" id="firstname">
-            </div>
-            <div class="form-item">
-                <label for="lastname">Last name:</label>
-                <input type="text" name="lastname" id="lastname">
-            </div>
-            <div class="form-item">
-                <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
-            </div>
-            <div class="form-item">
-                <label for="usermessage">Message:</label>
-                <textarea name="usermessage" id="usermessage" cols="20" rows="10"></textarea>
-            </div>
-            <div class="form-item">
+    <section id="form-section">
+        <form action="https://webdevbasics.net/scripts/demo.php" class="black-box" method="post">
+            <h3>Submit Your Questions Here</h3>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-item">
+                    <label for="firstname">First name: - Required</label>
+                    <input type="text" name="firstname" id="firstname" tabindex="1" required>
+                </div>
+                <div class="form-item">
+                    <label for="lastname">Last name: - Required</label>
+                    <input type="text" name="lastname" id="lastname" tabindex="2" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email: - Required</label>
+                    <input type="email" name="email" id="email" tabindex="3" required>
+                </div>
+                <div class="form-item">
+                    <label for="usermessage">Message: - Required</label>
+                    <textarea name="usermessage" id="usermessage" cols="20" rows="10" tabindex="4" required></textarea>
+                </div>
                 <input type="submit" value="Submit" id="submit-button">
-            </div>
+            </fieldset>
         </form>
-    </section>
-    <section class="center">
-        <div class="black-box fun-fact  contact-section">
-            <p>Explain how the rate of services will change and company will
-                need to make an estimate. Tell the user to click below to contact sales.
-            </p>
-            <a href="" class="black-box fake-btn contact-btn">Contact Us</a>
-        </div>
     </section>
 </main>
 <footer>
